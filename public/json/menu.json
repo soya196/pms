@@ -1,0 +1,16 @@
+[
+    {"title": "PMS Project Document", "isFolder": true, "key": "folder2",
+        "children": [
+            {"title": "Features"},
+            {"title": "Specification"},
+            {"title": "Mockup"}
+			]
+        },
+	{"title": "Folder 3", "isFolder": true, "key": "folder3",
+	    "children": [
+		    {"title": "Sub-item 3.1"},
+		    {"title": "Sub-item 3.2"}
+		    ]
+		},
+	{"title": "Item 5"}
+]

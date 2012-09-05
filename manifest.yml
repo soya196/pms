@@ -1,0 +1,18 @@
+--- 
+applications: 
+  dist/pms-1.0-SNAPSHOT.zip: 
+    name: pmis
+    instances: 1
+    framework: 
+      name: play
+      info: 
+        exec: 
+        description: Play Framework Application
+        mem: 256M
+    url: ${name}.${target-base}
+    services: 
+      mongodb-95fe8: 
+        type: mongodb
+      mongodb-9d0d6: 
+        type: mongodb
+    mem: 256M

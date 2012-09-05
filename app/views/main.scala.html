@@ -1,0 +1,78 @@
+@(title: String)(leftmenu: Html)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/skin-vista/ui.dynatree.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/ui-lightness/jquery-ui-1.8.21.custom.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery-ui-1.8.21.custom.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.cookie.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/jquery.dynatree.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/tinymce/jquery.tinymce.js")" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="brand">PMIS</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active">
+                                <a href="#">DashBoard</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Project</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Issue Tracking</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Schedule</a>
+                            </li>
+                            <li class="">
+                                <a href="#">Knowledge Base</a>
+                            </li>
+                            <li class="">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li >
+                                <a href="#">Select Project</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row-fluid">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a> <span class="divider">/</span></li>
+                        <li><a href="#">Library</a> <span class="divider">/</span></li>
+                        <li class="active">Data</li>
+                    </ul>
+                </div>
+                <div class="row-fluid">
+                    <div class="span3">
+                        @leftmenu
+                    </div>
+
+                    <div class="span9">
+                        @content
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
